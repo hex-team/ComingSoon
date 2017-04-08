@@ -1,0 +1,75 @@
+html,body{
+    background: #eee;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Center{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+#Center svg{
+    width: 550px;
+    height: 175px;
+    margin: 0 auto;
+    /*background: #000;*/
+}
+#Team{
+    -webkit-animation: team .4s forwards;
+    -webkit-animation-delay: .9s;
+    animation: team .4s forwards;
+    animation-delay: .9s;
+    transform: translate(450px, 0px);
+}
+@keyframes team{
+    0% {
+        opacity: 0;
+        transform: translate(450px, 0px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+#Hex{
+    -webkit-animation: hex .4s forwards;
+    -webkit-animation-delay: .5s;
+    animation: hex .4s forwards;
+    animation-delay: .5s;
+    transform: translate(-1100px, 0px);
+}
+@keyframes hex{
+    0% {
+        opacity: 0;
+        transform: translate(-1100px, 0px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+#Center h1{
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 30px;
+    -webkit-animation: text .4s forwards;
+    -webkit-animation-delay: 1.4s;
+    animation: text .4s forwards;
+    animation-delay: 1.4s;
+    opacity: 0;
+    margin-top: 100px;
+}
+@keyframes text{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
