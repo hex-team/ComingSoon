@@ -25,7 +25,8 @@ body.loaded{
     position: absolute;
     left: 50%;
     top: 40%;
-    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 999;
@@ -35,14 +36,13 @@ body.loaded{
     width: 400px;
     height: 175px;
     margin: 0 auto;
-    /*background: #000;*/
 }
 
 #Team {
-    -webkit-animation: team .3s forwards;
-    -webkit-animation-delay: .9s;
-    animation: team .3s forwards;
-    animation-delay: .9s;
+    -webkit-animation: team .3s forwards .9s;
+    -moz-animation: team .3s forwards .9s;
+    -o-animation: team .3s forwards .9s;
+    animation: team .3s forwards .9s;
     opacity: 0;
     transform: translate(450px, 0px);
 }
@@ -59,10 +59,10 @@ body.loaded{
 }
 
 #Hex {
-    -webkit-animation: hex .3s forwards;
-    -webkit-animation-delay: .7s;
-    animation: hex .3s forwards;
-    animation-delay: .7s;
+    -webkit-animation: hex .3s forwards .7s;
+    -moz-animation: hex .3s forwards .7s;
+    -o-animation: hex .3s forwards .7s;
+    animation: hex .3s forwards .7s;
     opacity: 0;
     transform: translate(-100px, 0px);
 }
@@ -84,7 +84,7 @@ body.loaded{
     text-align: center;
     left: 50%;
     -o-transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
     -webkit-transform: translate(-50%, 0%);
     transform: translate(-50%, 0%);
 }
@@ -94,10 +94,10 @@ body.loaded{
     font-size: 1em;
     color: #999;
     margin-bottom: 30px;
-    -webkit-animation: text .3s forwards;
-    -webkit-animation-delay: 1s;
-    animation: text .3s forwards;
-    animation-delay: 1s;
+    -webkit-animation: text .3s forwards 1s;
+    -moz-animation: text .3s forwards 1s;
+    -o-animation: text .3s forwards 1s;
+    animation: text .3s forwards 1s;
     opacity: 0;
     margin-bottom: 30px;
 }
@@ -107,10 +107,10 @@ body.loaded{
     color: #999;
     text-decoration: underline;
     cursor: pointer;
-    -webkit-animation: text .3s forwards;
-    -webkit-animation-delay: 1.3s;
-    animation: text .3s forwards;
-    animation-delay: 1.3s;
+    -webkit-animation: text .3s forwards 1.3s;
+    -moz-animation: text .3s forwards 1.3s;
+    -o-animation: text .3s forwards 1.3s;
+    animation: text .3s forwards 1.3s;
     opacity: 0;
 }
 
