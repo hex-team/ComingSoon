@@ -26,9 +26,9 @@ body {
 
 #Team {
     -webkit-animation: team .3s forwards;
-    -webkit-animation-delay: .9s;
+    -webkit-animation-delay: .8s;
     animation: team .3s forwards;
-    animation-delay: .9s;
+    animation-delay: .8s;
     transform: translate(450px, 0px);
 }
 
@@ -44,9 +44,9 @@ body {
 }
 
 #Hex {
-    -webkit-animation: hex .4s forwards;
+    -webkit-animation: hex .3s forwards;
     -webkit-animation-delay: .5s;
-    animation: hex .4s forwards;
+    animation: hex .3s forwards;
     animation-delay: .5s;
     transform: translate(-1100px, 0px);
 }
@@ -66,10 +66,10 @@ body {
     font-size: 1.5em;
     color: #555;
     margin-bottom: 30px;
-    -webkit-animation: text .4s forwards;
-    -webkit-animation-delay: 1.4s;
-    animation: text .4s forwards;
-    animation-delay: 1.4s;
+    -webkit-animation: text .3s forwards;
+    -webkit-animation-delay: 1.3s;
+    animation: text .3s forwards;
+    animation-delay: 1.3s;
     opacity: 0;
     margin-top: 100px;
 }
@@ -78,9 +78,9 @@ body {
     font-size: 1em;
     color: #555;
     margin-bottom: 30px;
-    -webkit-animation: text .4s forwards;
+    -webkit-animation: text .3s forwards;
     -webkit-animation-delay: 1.8s;
-    animation: text .4s forwards;
+    animation: text .3s forwards;
     animation-delay: 1.8s;
     opacity: 0;
     margin-top: 100px;
@@ -94,5 +94,11 @@ body {
     100% {
         opacity: 1;
         transform: translate(0px, 0px);
+    }
+}
+
+@media(max-width:550px){
+    #Center svg{
+        width: 350px;
     }
 }
