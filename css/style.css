@@ -130,3 +130,12 @@ body.loaded{
         width: 350px;
     }
 }
+
+@media(max-width:350px){
+    #Center svg{
+        width: 250px;
+    }
+    #Bottom h3{
+        width: 300px;
+    }
+}
